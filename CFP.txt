@@ -3,139 +3,116 @@ FIRST CALL FOR PAPERS
 LingEmbed 2027
 Theories Under Pressure: Embedding Linguistic Frameworks in Neural Models
 
-First workshop, co-located with COLING 2027
-Macau, China, 9–14 May 2027 (exact workshop day to be announced)
+Workshop at COLING 2027
+Macau, China, 9–14 May 2027
 https://stergioscha.github.io/LingEmbed-workshop/
 
-------------------------------------------------------------------------
-OVERVIEW
-------------------------------------------------------------------------
-
-Neural language models are fluent but theory-blind: they carry no
-explicit commitment to any account of syntax, semantics, or pragmatics,
-and it is hard to say whether a given linguistic structure does any work
-inside them. Decades of linguistic theory (Categorial Grammar, HPSG,
-Minimalism, Construction Grammar, Dynamic Syntax, type-theoretic
-semantics) encode exactly the structure these models leave implicit.
-
-LingEmbed asks a single question: what happens when a linguistic
-framework is operationalized as a computational component inside a
-neural model, and can rival theories be compared this way?
-
-The workshop treats a linguistic theory as a callable, parameterized,
-differentiable module that competes under data pressure. This turns two
-communities' questions into one programme:
-
-  * For NLP: can theory-derived structure make models more
-    compositional, sample-efficient, verifiable, or interpretable?
-  * For theoretical linguistics: when two frameworks compete in the same
-    network, which earns its keep on which phenomena? This gives theory
-    a large-scale empirical arbiter beyond introspective judgements.
-
-Embedding a whole grammar is NOT an entry requirement. Theoretical
-linguists can contribute without a GPU, and ML researchers without
-committing to a framework.
+Submission deadline: 5 January 2027
 
 ------------------------------------------------------------------------
-TRACKS AND TOPICS
+ABOUT THE WORKSHOP
 ------------------------------------------------------------------------
 
-1. Grammars and theories as modules
-   Full or partial operationalizations of linguistic frameworks as
-   differentiable, callable components, and theory-to-tensor
-   compilation schemes. For example:
-   - categorial, Lambek or pregroup grammars compiled into tensor
-     networks or neural parsers
-   - feature structures and unification (HPSG, LFG) as neural components
-   - Minimalist, construction-based or Dynamic Syntax grammars inside
-     neural architectures
-   - type-theoretic semantics (e.g. MTT, TTR) as constraints on or
-     components of neural models
+Neural language models are fluent, but they make no explicit commitment
+to any theory of syntax, semantics or pragmatics. Linguistic frameworks
+such as Categorial Grammar, HPSG, Minimalism, Construction Grammar,
+Dynamic Syntax and type-theoretic semantics describe exactly the
+structure these models leave implicit.
 
-2. Probing for theory
-   Testing whether pretrained models encode the structure a theory
-   predicts (constituency, dependency, type structure, scope), and how
-   that structure is distributed across the representation.
+LingEmbed brings together NLP researchers and theoretical linguists
+around one question: what happens when a linguistic framework is built
+into a neural model as a working, differentiable component, and can
+rival theories be compared this way? Does theory-derived structure make
+models more compositional, sample-efficient, verifiable or
+interpretable? And when frameworks are put in the same network, which
+one helps on which phenomena?
 
-3. Theory competition and evaluation
-   Putting rival frameworks in the same network and measuring which
-   helps where. This includes benchmarks and cognitive tests of whether
-   an embedded theory produces human-like processing rather than only a
-   task gain.
-
-4. Enabling resources and negative results
-   Treebanks, meaning representations, formalisms and grammar
-   implementations, and honest reports of what does not (yet) work.
+You do not need to implement a whole grammar to take part. We welcome
+work at every level, from full implementations to probing studies,
+resources and negative results.
 
 ------------------------------------------------------------------------
-A LADDERED CALL
+TOPICS
 ------------------------------------------------------------------------
 
-All four of the following are reviewed as full contributions:
+We invite submissions on topics including, but not limited to:
 
-  1. complete implementations of a framework as a differentiable module
-  2. partial or phenomenon-scoped implementations
-  3. theory-committed probing, with nothing compiled
-  4. enabling resources or negative results
+Grammars and theories as modules
+  - categorial, Lambek or pregroup grammars compiled into tensor
+    networks or neural parsers
+  - feature structures and unification (HPSG, LFG) as neural components
+  - Minimalist, construction-based or Dynamic Syntax grammars inside
+    neural architectures
+  - type-theoretic semantics (e.g. MTT, TTR) as constraints on, or
+    components of, neural models
+  - methods for compiling linguistic theories into tensors
 
-Negative results are explicitly welcome.
+Probing for theory
+  - whether pretrained models encode the structure a theory predicts:
+    constituency, dependency, type structure, scope
+  - how that structure is distributed across the representation
+
+Theory competition and evaluation
+  - rival frameworks in the same network, compared phenomenon by
+    phenomenon
+  - benchmarks and cognitive or psycholinguistic tests of whether an
+    embedded theory leads to human-like processing
+
+Resources and negative results
+  - treebanks, meaning representations, formalisms and grammar
+    implementations
+  - careful reports of what does not (yet) work
+
+Complete implementations, partial or phenomenon-specific ones,
+theory-driven probing, and resources or negative results are all
+reviewed as full papers.
 
 ------------------------------------------------------------------------
-SHARED-TASK DESIGN FORUM
+TASK-DESIGN SESSION
 ------------------------------------------------------------------------
 
-There is no shared task in this first edition. The natural task
-("compile your framework and compete") cannot yet be run fairly: any
-measured difference today would reflect implementation maturity rather
-than theoretical adequacy.
+The workshop closes with an open session to design a future shared task
+on comparing linguistic frameworks inside neural models. We will discuss
+what counts as evidence that a theory helps, what must be held constant
+across frameworks, which phenomena and datasets to target, and which
+formats are realistic.
 
-The workshop closes instead with a structured task-design forum. It will
-address what would count as evidence that a theory helps; which
-comparisons are identifiable and what must be held fixed across
-frameworks; which phenomena already have evaluation data and human
-processing measures; and which formats are realistic. To keep the forum
-concrete, we invite short task-design contributions: desiderata, pilot
-studies, candidate evaluation items, and feasibility analyses of prior
-shared tasks.
-
-The forum's output is a community blueprint: a co-authored report, with
-all contributors credited, specifying the format, target phenomena,
-data, metrics and division of labour for the second edition's shared
-task.
+You can take part by submitting a short task-design contribution:
+desiderata, a pilot study, candidate evaluation items, or a feasibility
+analysis of an earlier shared task. The session will produce a
+co-authored blueprint for the next edition's shared task, and every
+contributor will be credited.
 
 ------------------------------------------------------------------------
 SUBMISSIONS
 ------------------------------------------------------------------------
 
-We invite:
-
-  * Archival long papers: up to 8 pages
-  * Archival short papers: up to 4 pages
+  * Long papers (archival): up to 8 pages
+  * Short papers (archival): up to 4 pages
   * Position papers: up to 4 pages
-  * Short task-design contributions for the forum: up to 2 pages
-  * Non-archival submissions: work under review or published elsewhere
-    (cross-submissions), in any of the formats above
+  * Task-design contributions: up to 2 pages
+  * Non-archival submissions: work under review or already published
+    elsewhere, in any of the formats above
 
 Page limits exclude references and appendices. Accepted archival papers
-get one additional page for the camera-ready version.
+get one extra page in the camera-ready version and will appear in the
+workshop proceedings in the ACL Anthology.
 
-Submissions must use the official ACL style templates and be fully
-anonymized for double-blind review. Reviewing is on START, with direct
-submissions only (no ACL Rolling Review commitments). Archival papers
-will appear in the workshop proceedings in the ACL Anthology.
+Please use the official ACL style templates. Reviewing is double-blind,
+so submissions must be anonymised. Submit directly through START; ACL
+Rolling Review commitments are not accepted.
 
-Submission site: to be announced at
-https://stergioscha.github.io/LingEmbed-workshop/
+Submission site: to be announced on the workshop website.
 
 ------------------------------------------------------------------------
 IMPORTANT DATES (all deadlines 23:59 Anywhere on Earth)
 ------------------------------------------------------------------------
 
-  Paper submission deadline ......... 5 January 2027
-  Notification of acceptance ........ 6 February 2027
-  Camera-ready papers due ........... 5 March 2027
-  Workshop .......................... one day during COLING 2027,
-                                      9–14 May 2027 (date TBA)
+  Submission deadline .............. 5 January 2027
+  Notification of acceptance ....... 6 February 2027
+  Camera-ready papers due .......... 5 March 2027
+  Workshop ......................... one day during COLING 2027,
+                                     9–14 May 2027 (date TBA)
 
 ------------------------------------------------------------------------
 PARTICIPATION
@@ -143,18 +120,19 @@ PARTICIPATION
 
 The workshop is hybrid. There will be pre-recorded talks, live Q&A at
 times suited to several regions, a virtual poster session, captioned
-keynotes, and low-cost or free virtual attendance. We offer light-touch
-mentoring for first-time student authors, including theoretical
-linguists new to neural modelling.
+talks, and low-cost or free remote attendance. First-time student
+authors, including linguists new to neural modelling, can ask for
+mentoring.
 
 ------------------------------------------------------------------------
 ORGANISERS
 ------------------------------------------------------------------------
 
-Stergios Chatzikyriakidis, University of Crete
+Stergios Chatzikyriakidis, Institute for Language and Speech Processing
+  (ILSP), Athena Research Centre
 Emmanuele Chersoni, The Hong Kong Polytechnic University
 
-PROGRAM COMMITTEE (confirmed so far)
+PROGRAM COMMITTEE
 
 Lasha Abzianidze, Maxime Amblard, Marianna Apidianaki, Giosuè Baggio,
 Philippe Blache, Cristiano Chesi, Yan Cong, Robin Cooper,
@@ -166,5 +144,5 @@ He Zhou
 CONTACT
 ------------------------------------------------------------------------
 
-stergios.chatzikyriakidis@uoc.gr
+s.chatzikyriakidis@athenarc.gr
 emmanuele.chersoni@polyu.edu.hk
