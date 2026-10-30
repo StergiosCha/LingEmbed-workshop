@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LingEmbed 2027 @ COLING — Theories Under Pressure: Embedding Linguistic Frameworks in Neural Models</title>
+  <meta name="description" content="LingEmbed, a one-day workshop at COLING 2027 (Macau, 9–14 May 2027) on operationalizing linguistic frameworks as components of neural models and comparing rival theories this way.">
+  <meta property="og:title" content="LingEmbed 2027 — Theories Under Pressure">
+  <meta property="og:description" content="Embedding Linguistic Frameworks in Neural Models. First workshop, COLING 2027, Macau.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="#top">LingEmbed <span>2027</span></a>
+    <div>
+      <a href="#about">Description</a>
+      <a href="#topics">Call for papers</a>
+      <a href="#submit">Submit</a>
+      <a href="#dates">Dates</a>
+      <a href="#people">People</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <p class="eyebrow">first workshop · COLING 2027</p>
+      <h1>Theories Under Pressure</h1>
+      <p class="sub">Embedding Linguistic Frameworks in Neural Models</p>
+      <p class="meta">Macau, China · 9–14 May 2027 (workshop day TBA) · hybrid<br>Submission deadline: <b>5 January 2027</b></p>
+      <div class="cta">
+        <a class="btn primary" href="#topics">Call for papers</a>
+        <a class="btn" href="CFP.txt">Plain-text CfP</a>
+        <a class="btn" href="https://stergioscha.github.io/LingEmbed/">The LingEmbed research programme →</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>Description</h2>
+      <p>Neural language models are fluent but theory-blind: they carry no explicit commitment to any account of syntax, semantics, or pragmatics, and it is hard to say whether a given linguistic structure does any work inside them. Decades of linguistic theory (Categorial Grammar, HPSG, Minimalism, Construction Grammar, Dynamic Syntax, type-theoretic semantics) encode exactly the structure these models leave implicit. LingEmbed asks a single question that no existing workshop foregrounds: <b>what happens when a linguistic framework is operationalized as a computational component inside a neural model, and can rival theories be compared this way?</b></p>
+      <p>The workshop treats a linguistic theory as a callable, parameterized, differentiable module that competes under data pressure, which turns two communities' questions into one programme. For NLP: can theory-derived structure make models more compositional, sample-efficient, verifiable, or interpretable? For theoretical linguistics: when two frameworks compete in the same network, which earns its keep on which phenomena, giving theory a large-scale empirical arbiter beyond introspective judgements?</p>
+      <p>The call is laddered (see <a href="#scope">Scope of the call</a>), so embedding a whole grammar is not an entry barrier: theoretical linguists can contribute without a GPU, ML researchers without committing to a framework.</p>
+    </section>
+
+    <section id="topics">
+      <h2>Call for papers</h2>
+      <h3>Tracks</h3>
+      <ol class="tracks">
+        <li><b>Grammars and theories as modules:</b> full or partial operationalizations of the frameworks above as differentiable, callable components, and theory-to-tensor compilation schemes.</li>
+        <li><b>Probing for theory:</b> testing whether pretrained models encode the structure a theory predicts (constituency, dependency, type structure, scope), and how it is distributed across the representation.</li>
+        <li><b>Theory competition and evaluation:</b> putting rival frameworks in the same network and measuring which helps where, with benchmarks and cognitive tests of whether an embedded theory produces human-like processing rather than only a task gain.</li>
+        <li><b>Enabling resources and negative results:</b> treebanks, meaning representations, formalisms, and honest reports of what does not (yet) work.</li>
+      </ol>
+      <p>We invite archival long and short papers, non-archival cross-submissions, position papers, and short task-design contributions for the closing forum (see <a href="#forum">Format</a>).</p>
+
+      <h3 id="scope">Scope of the call</h3>
+      <p>A workshop that asked only for complete framework implementations would draw very few papers, because the number of groups able to compile a broad-coverage grammar into a differentiable module is small in every framework. The call is therefore laddered: complete implementations, partial or phenomenon-scoped ones, theory-committed probing with nothing compiled, and enabling resources or negative results are all reviewed as full contributions. The last two are where most of the community already works and where a first edition can expect volume. The first two are what the workshop exists to make more common. <b>Negative results are explicitly welcome.</b></p>
+      <ol class="ladder">
+        <li><b>Complete implementations</b> of a framework as a differentiable module</li>
+        <li><b>Partial or phenomenon-scoped</b> implementations</li>
+        <li><b>Theory-committed probing</b>, with nothing compiled</li>
+        <li><b>Enabling resources or negative results</b></li>
+      </ol>
+    </section>
+
+    <section id="forum">
+      <h2>Format: papers plus a shared-task design session</h2>
+      <p>The workshop has two deliverables: a paper programme, and the design of the shared task itself, produced communally rather than imposed in advance. We do not run a shared task in the first edition. The natural task ("compile your framework and compete") is not yet executable: broad-coverage implementations are few, a two-month prototype cannot be fairly compared against decades of engineering in another framework, and any measured difference would reflect implementation maturity rather than theoretical adequacy. A leaderboard whose numbers cannot support their own claim would damage the comparison the workshop exists to make possible.</p>
+      <p>Designing that task correctly is itself the research problem. The closing session is a structured task-design forum:</p>
+      <ul class="plain">
+        <li>what would count as evidence that a theory helps;</li>
+        <li>which comparisons are identifiable and what must be held fixed across frameworks;</li>
+        <li>which phenomena have evaluation data and human processing measures already available;</li>
+        <li>which formats are realistic for the community that actually shows up.</li>
+      </ul>
+      <p>To keep the forum concrete, the call invites <b>short task-design contributions</b> alongside regular papers: desiderata, pilot studies, candidate evaluation items, and feasibility analyses of prior shared tasks. These are reviewed like other submissions and seed the discussion.</p>
+      <p>The session's output is a <b>community blueprint</b>: a co-authored report, circulated afterwards with all contributors credited, specifying the task's format, target phenomena, data, metrics, and division of labour. The second edition's task is built on it, with the community as co-designer rather than audience.</p>
+    </section>
+
+    <section id="submit">
+      <h2>Submissions</h2>
+      <table class="facts">
+        <tr><td>Archival long papers</td><td>up to 8 pages</td></tr>
+        <tr><td>Archival short papers</td><td>up to 4 pages</td></tr>
+        <tr><td>Position papers</td><td>up to 4 pages</td></tr>
+        <tr><td>Task-design contributions</td><td>up to 2 pages</td></tr>
+        <tr><td>Non-archival</td><td>cross-submissions, any of the formats above</td></tr>
+      </table>
+      <p>Page limits exclude references and appendices, and accepted archival papers get one extra page for the camera-ready version. Submissions must use the official ACL style templates and be fully anonymised for double-blind review. Reviewing is on START, with direct submissions only (no ACL Rolling Review commitments). Archival papers will appear in the workshop proceedings in the ACL Anthology.</p>
+      <p class="note">Submission site: to be announced here.</p>
+    </section>
+
+    <section id="positioning">
+      <h2>Positioning</h2>
+      <p>NALOMA joins logic and ML at the level of inference; LingEmbed's object is the grammar as a computational component. BlackboxNLP probes atheoretically; our probing track tests a named theory's predictions. GenBench benchmarks compositional generalization behaviorally; we ask whether theory-derived structure is what produces it. BriGap and the ILFC series take as their object the relation between formal and computational linguistics, in both directions. LingEmbed takes one operation in one direction, a theory compiled into a differentiable component and tested under data pressure, and is comparative between frameworks.</p>
+    </section>
+
+    <section id="dates">
+      <h2>Important dates</h2>
+      <table class="facts">
+        <tr><td>Paper submission deadline</td><td>5 January 2027</td></tr>
+        <tr><td>Notification of acceptance</td><td>6 February 2027</td></tr>
+        <tr><td>Camera-ready papers due</td><td>5 March 2027</td></tr>
+        <tr><td>Workshop</td><td>one day during COLING 2027, 9–14 May 2027 (TBA)</td></tr>
+      </table>
+      <p class="note">All deadlines are 23:59 Anywhere on Earth. Invited speaker: to be announced.</p>
+    </section>
+
+    <section id="people">
+      <h2>Organisers</h2>
+      <ul class="people">
+        <li><b>Stergios Chatzikyriakidis</b><span>University of Crete</span></li>
+        <li><b>Emmanuele Chersoni</b><span>The Hong Kong Polytechnic University</span></li>
+      </ul>
+      <h3>Program committee</h3>
+      <p class="pc">Lasha Abzianidze · Maxime Amblard · Marianna Apidianaki · Giosuè Baggio · Philippe Blache · Cristiano Chesi · Yan Cong · Robin Cooper · Valeria de Paiva · Yu-yin Hsu · Elisabetta Jezek · Konstantinos Kogkalidis · Alessandro Lenci · Ludovica Pannitto · Sandro Pezzelle · Jakob Prange · He Zhou</p>
+      <p class="note">More members to be confirmed.</p>
+    </section>
+
+    <section id="participation">
+      <h2>Participation</h2>
+      <p>The workshop is hybrid. There will be pre-recorded talks, live Q&amp;A at times that work for several regions, a virtual poster session, captioned keynotes, and low-cost or free virtual attendance. First-time student authors, including theoretical linguists new to neural modelling, can ask for light-touch mentoring.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:stergios.chatzikyriakidis@uoc.gr">stergios.chatzikyriakidis@uoc.gr</a><br><a href="mailto:emmanuele.chersoni@polyu.edu.hk">emmanuele.chersoni@polyu.edu.hk</a></p>
+    </section>
+  </main>
+
+  <footer>LingEmbed 2027 · COLING 2027, Macau · part of the <a href="https://stergioscha.github.io/LingEmbed/">LingEmbed research programme</a></footer>
+</body>
+</html>
