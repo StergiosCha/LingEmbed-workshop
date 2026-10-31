@@ -49,3 +49,10 @@ footer{max-width:780px;margin:0 auto;padding:28px 24px 48px;color:var(--muted);f
 .ladder li{position:relative;padding:10px 14px 10px 48px;margin-bottom:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:#c9d0e3}
 .ladder li::before{counter-increment:r;content:counter(r);position:absolute;left:12px;top:50%;transform:translateY(-50%);width:24px;height:24px;border-radius:7px;background:var(--sym);color:#0a0f20;font:700 .8rem/24px var(--mono);text-align:center}
 .ladder li:nth-child(2)::before{background:var(--emb)}.ladder li:nth-child(3)::before{background:#d9a3f5}.ladder li:nth-child(4)::before{background:var(--neu)}
+
+/* powered by */
+.powered{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:.84rem;text-decoration:none}
+.powered:hover{color:var(--text);text-decoration:none}
+.powered img{height:20px;width:auto;opacity:.9}
+.powered b{font-weight:600;color:var(--text)}
+footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}

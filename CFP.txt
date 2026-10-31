@@ -118,11 +118,7 @@ IMPORTANT DATES (all deadlines 23:59 Anywhere on Earth)
 PARTICIPATION
 ------------------------------------------------------------------------
 
-The workshop is hybrid. There will be pre-recorded talks, live Q&A at
-times suited to several regions, a virtual poster session, captioned
-talks, and low-cost or free remote attendance. First-time student
-authors, including linguists new to neural modelling, can ask for
-mentoring.
+The workshop is hybrid.
 
 ------------------------------------------------------------------------
 ORGANISERS
