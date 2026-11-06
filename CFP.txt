@@ -89,8 +89,8 @@ SUBMISSIONS
 
   * Long papers (archival): up to 8 pages
   * Short papers (archival): up to 4 pages
-  * Position papers: up to 4 pages
-  * Task-design contributions: up to 2 pages
+  * Position papers (archival): up to 4 pages
+  * Task-design contributions (non-archival): up to 2 pages
   * Non-archival submissions: work under review or already published
     elsewhere, in any of the formats above
 
